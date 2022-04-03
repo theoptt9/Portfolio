@@ -61,6 +61,7 @@ width: 100%;
 display: flex;
 flex-direction: row;
 margin-bottom: 50px;
+
 }
 
 #navbarSansLogo{
@@ -83,6 +84,13 @@ flex-direction: row;
 padding-bottom: 50px;
 
 }
+
+footer{
+    padding-top: 150px;
+    text-align: center;
+}
+
+
 #typed{
 color:#64ffda;
 margin-left: 1%;
@@ -107,6 +115,7 @@ border-left: 18px solid transparent;
 border-right: 18px solid transparent;
 border-top: 30px solid #64ffda;
 }
+
 
 
 
@@ -174,4 +183,18 @@ flex-direction: row;
     font-size: 50px;
     margin-top: 100px;
     margin-left: 7%;
+}
+
+.imgFooter{
+    width: 100px;
+    padding-top: 2%;
+    
+    
+}
+#imageFooter{
+    width: 90%;
+    padding-left: 10%;
+    
+    display: flex;
+    justify-content: space-around;
 }

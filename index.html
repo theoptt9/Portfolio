@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="competence.css">
   <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="darkMode.css">
   <script src="app.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -16,192 +17,205 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+  <script src="https://kit.fontawesome.com/849fccff52.js" crossorigin="anonymous"></script>
   <title>Portfolio Théo Petit</title>
 </head>
 
 <body>
-  <div id="navbar">
-    <img id="logo" data-aos="fade-down" data-aos-delay="100" src="./media/hexagone3.png">
-    <ul id="navbarSansLogo">
-      <li data-aos="fade-down" data-aos-delay="300">A propos</li>
-      <li data-aos="fade-down" data-aos-delay="600">Projets</li>
-      <li data-aos="fade-down" data-aos-delay="900">Compétences</li>
-      <li data-aos="fade-down" data-aos-delay="1200">Contact</li>
-    </ul>
-  </div>
-
-  <div class="titreEtAnim">
-    <div id="titre" data-aos="zoom-in">
-      <h2>Bonjour, mon nom est</h2>
-      <h1>Théo Petit</h1>
-      <div class="animTitre">
-        <h3>J'adore </h3>
-        <h3 id="typed"> </h3>
-      </div>
+   
+    <div id="navbar">
+      <img id="logo" data-aos="fade-down" data-aos-delay="100" src="./media/hexagone3.png">
+      <ul id="navbarSansLogo">
+        <li data-aos="fade-down" data-aos-delay="300"><p>A propos</p></li>
+        <li data-aos="fade-down" data-aos-delay="600"><p>Projets</p></li>
+        <li data-aos="fade-down" data-aos-delay="900"><p>Compétences</p></li>
+        <li data-aos="fade-down" data-aos-delay="1200"><p>Contact</p></li>
+      </ul>
     </div>
-
-    <div id="bordureAnim" data-aos="flip-up" data-aos-delay="1200">
-      <div id="animCercle">
-        <div id="triangle-1"></div>
-        <div id="triangle-2"></div>
-      </div>
-    </div>
-  </div>
-  <a id="cv" data-aos="flip-left" data-aos-delay="1200">Télécharger mon CV</a>
-  <section id="presentation" data-aos="zoom-in">
-    <p>J'ai 19 ans, je suis étudiant en IUT Informatique et j'apprécie tout ce qui touche à l'informatique et plus
-      particulièrement au web.
-      Je fais des sites web depuis 2 ans et je souhaite être developpeur front-end. </p>
-      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_k86wxpgr.json" mode="bounce"
-      style="width: 300px; height: 300px;" autoplay loop></lottie-player>
-  </section>
- 
-
-
-  <section id="card">
-    <div class="container-card">
-      <div class="card" data-aos="flip-left" data-aos-anchor-placement="center-bottom">
-        <div class="card-header">
-          <img src="./media/php.png" alt="siteApex" />
-        </div>
-        <div class="card-body">
-          <div id="tagDiv">
-            <span class="tag tag-php">PHP</span>
-            <span class="tag tag-htmlcss">HTML/CSS</span>
+    <label id="dark-change"></label>
+    <div id="content">
+      <div class="titreEtAnim">
+        <div id="titre" data-aos="zoom-in">
+          <h2>Bonjour, mon nom est</h2>
+          <h1>Théo Petit</h1>
+          <div class="animTitre">
+            <h3>J'adore </h3>
+            <h3 id="typed"> </h3>
           </div>
-          <h4>
-            Site Apex Legends Symfony
-          </h4>
-          <p>
-            Création d'un site web en PhP avec Symfony. Ce site comprend, une connexion utilisateurs, des droits
-            d'admin. Les utilisateurs peuvent ajouter une vidéo, une actualité, créer un personnage.
-          </p>
-          <div class="user">
-            <div class="user-info">
-              <a href="https://github.com/theoptt9/ApexSymfony"><img id="logoGit" src="./media/github.png"
-                  alt="Github" /></a>
-              <small>18 Novembre 2021</small>
+        </div>
+
+        <div id="bordureAnim" data-aos="flip-up" data-aos-delay="1200">
+          <div id="animCercle">
+            <div id="triangle-1"></div>
+            <div id="triangle-2"></div>
+          </div>
+        </div>
+      </div>
+      <a id="cv" data-aos="flip-left" data-aos-delay="1200">Télécharger mon CV</a>
+      <section id="presentation" data-aos="zoom-in">
+        <p>J'ai 20 ans, je suis étudiant en IUT Informatique et j'apprécie tout ce qui touche à l'informatique et plus
+          particulièrement au web.
+          Je crée des sites web depuis 2 ans et je souhaite être developpeur front-end. </p>
+        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_k86wxpgr.json" mode="bounce"
+          style="width: 300px; height: 300px;" autoplay loop></lottie-player>
+      </section>
+
+
+
+      <section id="card">
+        <div class="container-card">
+          <div class="card" data-aos="flip-left" data-aos-anchor-placement="center-bottom">
+            <div class="card-header">
+              <img src="./media/php.png" alt="siteApex" />
+            </div>
+            <div class="card-body">
+              <div id="tagDiv">
+                <span class="tag tag-php">PHP</span>
+                <span class="tag tag-htmlcss">HTML/CSS</span>
+              </div>
+              <h4>
+                Site Apex Legends Symfony
+              </h4>
+              <p>
+                Création d'un site web en PhP avec Symfony. Ce site comprend, une connexion utilisateurs, des droits
+                d'admin. Les utilisateurs peuvent ajouter une vidéo, une actualité, créer un personnage.
+              </p>
+              <div class="user">
+                <div class="user-info">
+                  <a href="https://github.com/theoptt9/ApexSymfony"><img id="logoGit" src="./media/github.png"
+                      alt="Github" /></a>
+                  <small>18 Novembre 2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-anchor-placement="center-bottom">
+            <div class="card-header">
+              <img src="./media/siteFictif.png" alt="siteFictif" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-htmlcss">HTML/CSS</span>
+              <h4>
+                Site spatial
+              </h4>
+              <p>
+                Création d'un site fictif en HTML/CSS sur l'espace au cours de mon DUT Informatique. Ce projet fait
+                parti
+                d'un de mes premiers sites, soyez indulgents :)
+              </p>
+              <div class="user">
+                <div class="user-info">
+                  <a href="https://github.com/theoptt9/Combava"><img id="logoGit" src="./media/github.png"
+                      alt="Github" /></a>
+                  <small>18 Novembre 2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-aos="flip-left" data-aos-delay="600" data-aos-anchor-placement="center-bottom">
+            <div class="card-header">
+              <img src="./media/mlleStyle.png" alt="MlleStyle" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-htmlcss">HTML/CSS</span>
+              <h4>
+                Mlle Style
+              </h4>
+              <p>
+                Site crée pour une boutique locale de prêt-à-porter, tout en travaillant comme saisonnier à l'accueil
+                d'une
+                office de tourisme.
+              </p>
+              <div class="user">
+
+                <div class="user-info">
+                  <a href="https://github.com/theoptt9/MlleStyleArgenton"><img id="logoGit" src="./media/github.png"
+                      alt="Github" /></a>
+                  <small>18 Novembre 2021</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-anchor-placement="center-bottom">
-        <div class="card-header">
-          <img src="./media/siteFictif.png" alt="siteFictif" />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-htmlcss">HTML/CSS</span>
-          <h4>
-            Site spatial
-          </h4>
-          <p>
-            Création d'un site fictif en HTML/CSS sur l'espace au cours de mon DUT Informatique. Ce projet fait parti
-            d'un de mes premiers sites, soyez indulgents :)
-          </p>
-          <div class="user">
-            <div class="user-info">
-              <a href="https://github.com/theoptt9/Combava"><img id="logoGit" src="./media/github.png"
-                  alt="Github" /></a>
-              <small>18 Novembre 2021</small>
+      </section>
+
+
+
+
+      <div id="ensembleCompetenceEtSvg">
+        <div id="ensembleCompetence-wrapper">
+          <h1 class="competences">Compétences</h1>
+          <div class="divTexte">
+            <div class="skillBarComplete">
+              <div id="competence1">
+              </div>
             </div>
+            <p>HTML</p>
           </div>
-        </div>
-      </div>
-      <div class="card" data-aos="flip-left" data-aos-delay="600" data-aos-anchor-placement="center-bottom">
-        <div class="card-header">
-          <img src="./media/mlleStyle.png" alt="MlleStyle" />
-        </div>
-        <div class="card-body">
-          <span class="tag tag-htmlcss">HTML/CSS</span>
-          <h4>
-            Mlle Style
-          </h4>
-          <p>
-            Site crée pour une boutique locale de prêt-à-porter, tout en travaillant comme saisonnier à l'accueil d'une
-            office de tourisme.
-          </p>
-          <div class="user">
 
-            <div class="user-info">
-              <a href="https://github.com/theoptt9/Combava"><img id="logoGit" src="./media/github.png"
-                  alt="Github" /></a>
-              <small>18 Novembre 2021</small>
+          <div class="divTexte">
+            <div class="skillBarComplete">
+              <div id="competence2">
+              </div>
             </div>
+            <p>CSS</p>
           </div>
+
+          <div class="divTexte">
+            <div class="skillBarComplete">
+              <div id="competence3">
+              </div>
+            </div>
+            <p>PHP</p>
+          </div>
+
+          <div class="divTexte">
+            <div class="skillBarComplete">
+              <div id="competence4">
+              </div>
+            </div>
+            <p>Angular</p>
+          </div>
+
+          <div class="divTexte">
+            <div class="skillBarComplete">
+              <div id="competence5">
+              </div>
+            </div>
+            <p>SQL</p>
+          </div>
+
+        </div>
+
+        <div id="svg">
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_hd8ztfyp.json" mode="bounce"
+            style="width: 300px; height: 300px;" autoplay loop></lottie-player>
         </div>
       </div>
+      
+      <footer>
+        <p>Venez me suivre sur</p>
+        <div id="imageFooter">
+
+          <img class="imgFooter" src="./media/fiverr.png">
+          <img class="imgFooter" src="./media/instagram-removebg-preview.png">
+        </div>
+      </footer>
     </div>
-  </section>
-
-  
-
-
-  <div id="ensembleCompetenceEtSvg">
-    <div id="ensembleCompetence-wrapper">
-      <h1 class="competences">Compétences</h1>
-      <div class="divTexte">
-        <div class="skillBarComplete">
-          <div id="competence1">
-          </div>
-        </div>
-        <p>HTML</p>
-      </div>
-
-      <div class="divTexte">
-        <div class="skillBarComplete">
-          <div id="competence2">
-          </div>
-        </div>
-        <p>CSS</p>
-      </div>
-
-      <div class="divTexte">
-        <div class="skillBarComplete">
-          <div id="competence3">
-          </div>
-        </div>
-        <p>PHP</p>
-      </div>
-
-      <div class="divTexte">
-        <div class="skillBarComplete">
-          <div id="competence4">
-          </div>
-        </div>
-        <p>Angular</p>
-      </div>
-
-      <div class="divTexte">
-        <div class="skillBarComplete">
-          <div id="competence5">
-          </div>
-        </div>
-        <p>SQL</p>
-      </div>
-
-    </div>
-
-    <div id="svg">
-      <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_hd8ztfyp.json" mode="bounce"
-        style="width: 300px; height: 300px;" autoplay loop></lottie-player>
-    </div>
-
-  </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <script>
-    var typed = new Typed('#typed', {
-      strings: ['', 'le dev Front', 'les échecs', 'les jeux vidéo'],
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true,
-      showCursor: false,
-      smartBackspace: false
-    });
-  </script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+      var typed = new Typed('#typed', {
+        strings: ['', 'le dev Front', 'les échecs', 'les jeux vidéo'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        showCursor: false,
+        smartBackspace: false
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/darkMode.js"></script>
 </body>
 
 </html>
