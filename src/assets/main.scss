@@ -1,13 +1,31 @@
 body {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
 }
 
 h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Viga', sans-serif;
   text-transform: uppercase;
 }
 
 html {
   font-size: 10px;
+}
+
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+/* Cacher la scrollbar pour les navigateurs WebKit (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
